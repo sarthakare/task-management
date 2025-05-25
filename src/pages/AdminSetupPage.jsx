@@ -52,14 +52,17 @@ export default function AdminSetupPage() {
   };
 
   return (
-        <div className="h-screen w-full p-[1%]">
+    <div className="h-screen w-full p-[1%]">
       <div className="bg-[#CCE8FF] h-full w-full rounded-lg shadow-lg flex flex-col items-center justify-center px-[5%] py-[2%]">
         <div className="bg-white p-5 w-full rounded-lg shadow-md">
-          <h1 className="text-2xl font-semibold text-center">Welcome, "Company Name"</h1>
+          <h1 className="text-2xl font-semibold text-center">
+            Welcome, "Company Name"
+          </h1>
         </div>
 
         <p className="my-[1%] text-center text-gray-700">
-          Let's set up your organization's first admin. This account will have full access to manage users, teams, tasks, and configurations.
+          Let's set up your organization's first admin. This account will have
+          full access to manage users, teams, tasks, and configurations.
         </p>
 
         <div className="bg-white px-20 py-5 w-full rounded-lg shadow-md h-full overflow-auto">
@@ -68,8 +71,7 @@ export default function AdminSetupPage() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
-
-              <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-4">
               <label className="w-1/5 font-medium" htmlFor="name">
                 Full Name
               </label>
@@ -119,7 +121,7 @@ export default function AdminSetupPage() {
 
             <div className="flex items-center gap-4 mb-4">
               <label className="w-1/5 font-medium" htmlFor="designation">
-               Designation
+                Designation
               </label>
               <input
                 type="text"
@@ -135,7 +137,7 @@ export default function AdminSetupPage() {
 
             <div className="flex items-center gap-4 mb-4">
               <label className="w-1/5 font-medium" htmlFor="password">
-               Password
+                Password
               </label>
               <input
                 type="password"
@@ -151,7 +153,7 @@ export default function AdminSetupPage() {
 
             <div className="flex items-center gap-4 mb-4">
               <label className="w-1/5 font-medium" htmlFor="confirmPassword">
-               Confirm Password
+                Confirm Password
               </label>
               <input
                 type="password"
@@ -181,7 +183,10 @@ export default function AdminSetupPage() {
                 />
                 <label htmlFor="terms" className="text-sm text-gray-600">
                   I accept the{" "}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800">
+                  <a
+                    href="#"
+                    className="text-blue-600 underline hover:text-blue-800"
+                  >
                     terms and conditions
                   </a>
                 </label>
