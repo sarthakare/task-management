@@ -61,9 +61,9 @@ export default function Dashboard() {
 
       {/* Filters */}
       <div className="flex flex-wrap gap-4 items-center justify-evenly">
-        <FilterSelect label="Project" value={filters.project} onChange={(val) => setFilters({ ...filters, project: val })} options={["Project 1", "Project 2"]} />
-        <FilterSelect label="Team" value={filters.team} onChange={(val) => setFilters({ ...filters, team: val })} options={["Development", "Design"]} />
-        <FilterSelect label="Person" value={filters.person} onChange={(val) => setFilters({ ...filters, person: val })} options={["Raj", "Neha"]} />
+        <FilterSelect label="Projects" value={filters.project} onChange={(val) => setFilters({ ...filters, project: val })} options={["Project 1", "Project 2"]} />
+        <FilterSelect label="Teams" value={filters.team} onChange={(val) => setFilters({ ...filters, team: val })} options={["Development", "Design"]} />
+        <FilterSelect label="Persons" value={filters.person} onChange={(val) => setFilters({ ...filters, person: val })} options={["Raj", "Neha"]} />
         <FilterSelect label="Status" value={filters.status} onChange={(val) => setFilters({ ...filters, status: val })} options={["overdue", "upcoming", "completed", "pending"]} />
         <FilterSelect label="Priority" value={filters.priority} onChange={(val) => setFilters({ ...filters, priority: val })} options={["high", "medium", "low"]} />
       </div>
@@ -124,7 +124,7 @@ function FilterSelect({ label, value, onChange, options }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
       >
-        <option value="">{`All ${label}s`}</option>
+        <option value="">{`All ${label}`}</option>
         {options.map((opt) => (
           <option key={opt} value={opt}>
             {opt}
