@@ -13,7 +13,7 @@ const Sidebar = () => {
     { name: "Project Management", path: "/project-management", icon: <IoFolderOpen /> },
     { name: "Task Management", path: "/task-management", icon: <FaTasks /> },
     { name: "Reminders & Escalations", path: "/reminders-and-escalation", icon: <FaBell /> },
-    { name: "Reports & Analytics", path: "/admin-setup", icon: <TbReportSearch /> }
+    { name: "Reports & Analytics", path: "/reports-and-analytics", icon: <TbReportSearch /> }
   ];
 
   return (

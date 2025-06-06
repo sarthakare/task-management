@@ -23,6 +23,10 @@ import TaskListPage from "./pages/task-management/page";
 import CreateTaskPage from "./pages/task-management/create/page";
 import EditTaskPage from "./pages/task-management/edit/[id]";
 
+import RemindersEscalations from "./pages/reminders-escalation/page";
+
+import ReportsAnalytics from "./pages/reports-analytics/page";
+
 export default function App() {
   return (
     <Router>
@@ -55,6 +59,12 @@ export default function App() {
           <Route path="/task-management" element={<TaskListPage />} />
           <Route path="/task-management/create" element={<CreateTaskPage />} />
           <Route path="/task-management/edit/:id" element={<EditTaskPage />} />
+
+          {/* Reminders and Escalation Routes */}
+          <Route path="/reminders-and-escalation" element={<RemindersEscalations />} />
+
+          {/* Reports and Analytics Routes */}
+          <Route path="/reports-and-analytics" element={<ReportsAnalytics />} />
         </Route>
       </Routes>
     </Router>
